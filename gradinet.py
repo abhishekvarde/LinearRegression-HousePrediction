@@ -16,7 +16,6 @@ def gradient_descent(theta, X, y, itr, alpha):
         print(X.dot(np.transpose(theta)).shape)
         res = (np.transpose(X)).dot(hypothesis)
         sub = (alpha/X.shape[1]) * np.transpose(res)
-        print("I want to subtract")
         print(sub)
         theta = theta - sub
         print("print cost after {0}th iteration : {1}".format(it, cost_function(theta, X, y)))
